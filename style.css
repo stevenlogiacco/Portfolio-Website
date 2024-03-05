@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  /* Header and Nav Section */
+header {
+    background-color: white;
+    position: sticky;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  nav {
+    margin: 0;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 5%;
+  }
+
+  .logo {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+
+  }
+
+  .logo span {
+    color: #3c78d8;
+  }
+
+  #cv {
+    font-weight: 300;
+    color: black;
+  }
+  
+  nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 10px;
+  }
+
+  nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  nav ul li a:hover {
+    color: #3c78d8;
+    transition: .3s;
+  }
+
+  /* Change this to match the current page to indicate where the user is located */
+  #home {
+    color: #3c78d8;
+  }
+
+
+
+
+/* Index Page Hero Section */
+
