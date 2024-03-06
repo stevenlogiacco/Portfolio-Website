@@ -93,6 +93,17 @@ header {
 }
 
 
+/* COMMING SOON CSS */
+
+.coming-soon {
+    font-weight: 500;
+    font-size: 50px;
+    color: #2b2d42;
+    text-align: center;
+}
+
+
+
 /* Index Page Hero Section */
 
 .herocontainer {
@@ -156,7 +167,7 @@ header {
 .skills {
     background-color: yellow;
     grid-row: 3 / 4;
-    grid-column: 2 / 4;
+    grid-column: 2 / 3;
 }
 
 .photo img {
@@ -171,7 +182,7 @@ header {
 
   /* Footer styling */
   footer {
-    height: 50px;
+    height: 30px;
     background-color: #fafaff;
     color: #2b2d42;
     position: fixed;
