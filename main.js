@@ -1,6 +1,12 @@
 // Skills game on homepage
 // Initialize skills and revealedSkills arrays
-let skills = ['skill-1', 'skill-2', 'skill-3', 'skill-4', 'skill-5'];
+let skills = [
+'Skilled communicator and collaborator',
+'Highly organised and detail oriented',
+'Experience in Cloud and IT delivery',
+'Microsoft Suite including advanced Excel',
+'PMP professional in all knowledge areas including Agile PM',
+'Backlog management'];
 let revealedSkills = [];
 
 // Get the button element
@@ -12,9 +18,8 @@ addButton.addEventListener('click', addSkill);
 function addSkill() {
     // Check if all skills have been revealed
     if (revealedSkills.length === skills.length) {
-        // Disable the button
-        addButton.disabled = true;
-        return; // Exit the function
+        // Reset revealedSkills array
+        revealedSkills = [];
     }
 
     // Get the next skill from the skills array
@@ -45,3 +50,24 @@ function updateSkillsDisplay() {
 
 // Initial update to display any pre-existing skills
 updateSkillsDisplay();
+
+
+function addSkill() {
+    // Check if all skills have been revealed
+    if (revealedSkills.length === skills.length) {
+        // Reset revealedSkills array
+        revealedSkills = [];
+
+        // Clear the skills display in the DOM
+        updateSkillsDisplay();
+    } else {
+        // Get the next skill from the skills array
+        const nextSkill = skills[revealedSkills.length];
+
+        // Add the skill to revealedSkills
+        revealedSkills.push(nextSkill);
+
+        // Update the DOM to display the revealedSkills
+        updateSkillsDisplay();
+    }
+}
