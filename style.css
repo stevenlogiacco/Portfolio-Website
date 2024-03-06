@@ -13,11 +13,19 @@
   }
 
   h2 {
-    color: #3c78d8;
+    color: hsl(217, 67%, 54%);
 }
 
   h3 {
     color: #2b2d42;
+  }
+
+  .page-headings {
+    text-align: center;
+    color: #2b2d42;
+    font-size: 2rem;
+    font-weight: 500;
+    font-size: 2rem;
   }
 
 
@@ -60,7 +68,7 @@ header {
   nav ul li a {
     text-decoration: none;
     font-weight: bold;
-    color: black;
+    color: #2b2d42;
   }
 
   nav ul li a:hover {
@@ -111,6 +119,20 @@ header {
     z-index: 9999; /* Ensure it's above other content */
 }
 
+
+  /* FOOTER */
+  footer {
+    height: 30px;
+    background-color: #fafaff;
+    color: #2b2d42;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
 /* COMMING SOON CSS */
 
@@ -242,26 +264,14 @@ header {
 
 
 
-  /* FOOTER */
-  footer {
-    height: 30px;
-    background-color: #fafaff;
-    color: #2b2d42;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+
 
 
 
   /* CONTACT PAGE */
   .contact-container {
     display: grid;
-    margin: 75px auto;
+    margin: 50px auto;
     max-width: 600px;
     grid-template: repeat(2, 300px) / repeat(2, 300px);
     gap: 10px;
@@ -285,6 +295,11 @@ header {
   margin: 5px;
 }
 
+.email a, p {
+  text-decoration: none;
+  color: #2b2d42;
+}
+
 .linkedin {
     display: flex;
     flex-direction: column;
@@ -296,7 +311,12 @@ header {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
     
-}   
+}
+
+.linkedin a, p {
+  text-decoration: none;
+  color: #2b2d42;
+}
 
 #linked-image {
   max-width: 100px;
@@ -323,6 +343,11 @@ header {
   margin: 5px;
 }
 
+.phone a, p {
+  text-decoration: none;
+  color: #2b2d42;
+}
+
 .cv {
     display: flex;
     flex-direction: column;
@@ -339,4 +364,9 @@ header {
   max-width: 100px;
   max-height: 100px;
   margin: 5px;
+}
+
+.cv a, p {
+  text-decoration: none;
+  color: #2b2d42;
 }
