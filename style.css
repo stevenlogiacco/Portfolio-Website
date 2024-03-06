@@ -175,6 +175,7 @@ header {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 40px 1fr;
+    margin-bottom: 50px;
 }
 
 .button-box {
