@@ -1,12 +1,10 @@
 // Skills game on homepage
 // Initialize skills and revealedSkills arrays
 let skills = [
-'Skilled communicator and collaborator',
-'Highly organised and detail oriented',
-'Experience in Cloud and IT delivery',
-'Microsoft Suite including advanced Excel',
-'PMP professional in all knowledge areas including Agile PM',
-'Backlog management'];
+    'SOFT SKILLS:', 'collaboration', 'teamwork', 'communication', 'time management', 
+    'solid leadership', 'organisation', 'problem solving', 'critical thinking',
+    'HARD SKILLS:', 'certified project management professional (PMP)', 'including agile PM', 
+    'microsoft suite', 'SAP', 'HTML/CSS/JS'];
 let revealedSkills = [];
 
 // Get the button element
