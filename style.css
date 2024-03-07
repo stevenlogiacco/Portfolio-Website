@@ -99,6 +99,34 @@ header {
     color: #3c78d8;
   }
 
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #fafaff;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .sidebar li {
+    width: 100%;
+  }
+
+  .sidebar a {
+    width: 100%;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
   .button-34 {
     background: #3c78d8;
     border-radius: 999px;
@@ -363,4 +391,14 @@ header {
 .cv a, p {
   text-decoration: none;
   color: #2b2d42;
+}
+
+
+@media(max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
 }

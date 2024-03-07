@@ -3,6 +3,7 @@
     <head>
         <title>Steven Lo-Giacco | Curriculum Vitae</title>
         <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="apple-touch-icon" sizes="180x180" href="resources/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="resources/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="resources/favicon-16x16.png">
@@ -12,14 +13,21 @@
         <header>
             <nav>
                 <h2 class="logo"><span>Steven Lo-Giacco</span></h2>
-                <ul>
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                     <li><a href="#" id="home"> Home </a></li>
-                    <li>|</li>
                     <li><a href="projects.html"> Projects </a></li>
-                    <li>|</li>
                     <li><a href="contact.html"> Contact </a></li>
                 </ul>
-                <img id="profile-pic" src="resources/Profile Pic.jpg" alt="profile-pic">
+                <ul>
+                    <li class="hideOnMobile"><a href="#" id="home"> Home </a></li>
+                    <li class="hideOnMobile">|</li>
+                    <li class="hideOnMobile"><a href="projects.html"> Projects </a></li>
+                    <li class="hideOnMobile">|</li>
+                    <li class="hideOnMobile"><a href="contact.html"> Contact </a></li>
+                    <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"></svg></a></li>
+                </ul>
+                <img id="profile-pic" src="resources/Profile Pic.png" alt="profile-pic">
               </nav>
         </header>
 
@@ -62,7 +70,7 @@
                 </div>
             </div>
         </main>
-        
+
         <script src="main.js"></script>
     </body>
 
