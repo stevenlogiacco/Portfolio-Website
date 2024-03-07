@@ -80,6 +80,7 @@ header {
     text-decoration: none;
     font-weight: bold;
     color: #2b2d42;
+    pointer-events: auto;
   }
 
   nav ul li a:hover {
@@ -160,7 +161,7 @@ header {
     height: 30px;
     background-color: #fafaff;
     color: #2b2d42;
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -188,8 +189,6 @@ header {
 
 .welcome {
     color: #2b2d42;
-    font-size: 2rem;
-    font-weight: 100;
     grid-row: 1 / 2;
     grid-column: 2 / 3;
     display: flex;
@@ -274,13 +273,6 @@ header {
     padding: 10px 10px;
   }
 
-  .site-updates {
-    grid-row: 3 / 4;
-    grid-column: 3 / 4;
-    background-color: #fafaff;
-    max-height: 200px;
-    padding: 15px 25px;
-  }
 
 
 
@@ -398,7 +390,146 @@ header {
   .hideOnMobile {
     display: none;
   }
+
   .menu-button {
     display: block;
   }
+
+  .button-container {
+    position: fixed;
+    top: 110px;
+    right: 20px;
+    z-index: 10;
+}
+
+  header {
+    height: 100px;
+    z-index: 11;
+  }
+
+  nav {
+  top: 0px;
+  position: sticky;
+  margin: 0;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-left: 10%;
+  padding-right: 5%;
+  z-index: 11;
+}
+
+  .logo {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+}
+
+  .logo span {
+  color: #3c78d8;
+}
+
+  #profile-pic {
+  display: none;
+}
+
+.herocontainer {
+  display: grid;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+  gap: 0.25em;
+  /* Add Min-Max here to control the impact of resizing */
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto auto;
+}
+
+
+.welcome {
+  color: #2b2d42;
+  font-size: 3rem;
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.blurb {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  padding-right: 40px;
+  padding-bottom: 25px;
+}
+
+
+.experience {
+  margin-top: 20px;
+  border-radius: 15px;
+  background-color: #fafaff;
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+  padding: 15px 25px;
+}
+
+.experience h4 {
+  padding: 5px 0px;
+}
+
+.skills {
+  grid-row: 5 / 6;
+  grid-column: 1 / 2;
+  border-radius: 15px;
+  background-color: #fafaff;
+  padding: 15px 25px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40px 1fr;
+  margin-bottom: 50px;
+}
+
+.button-box {
+  display: flex;
+  justify-content: center;
+}
+
+#addSkillButton {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  background: #3c78d8;
+  border-radius: 999px;
+  box-shadow: #3c78d8 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+
+#revealedSkillsContainer {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  margin: 0;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#revealedSkillsContainer ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 10px;
+}
 }
