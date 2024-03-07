@@ -50,25 +50,25 @@ function updateSkillsDisplay() {
 updateSkillsDisplay();
 
 
-function addSkill() {
-    // Check if all skills have been revealed
-    if (revealedSkills.length === skills.length) {
-        // Reset revealedSkills array
-        revealedSkills = [];
+// function addSkill() {
+//     // Check if all skills have been revealed
+//     if (revealedSkills.length === skills.length) {
+//         // Reset revealedSkills array
+//         revealedSkills = [];
 
-        // Clear the skills display in the DOM
-        updateSkillsDisplay();
-    } else {
-        // Get the next skill from the skills array
-        const nextSkill = skills[revealedSkills.length];
+//         // Clear the skills display in the DOM
+//         updateSkillsDisplay();
+//     } else {
+//         // Get the next skill from the skills array
+//         const nextSkill = skills[revealedSkills.length];
 
-        // Add the skill to revealedSkills
-        revealedSkills.push(nextSkill);
+//         // Add the skill to revealedSkills
+//         revealedSkills.push(nextSkill);
 
-        // Update the DOM to display the revealedSkills
-        updateSkillsDisplay();
-    }
-}
+//         // Update the DOM to display the revealedSkills
+//         updateSkillsDisplay();
+//     }
+// }
 
 // SIDEBAR OPEN AND CLOSE
 

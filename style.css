@@ -12,6 +12,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    color: #2b2d42;
   }
 
   h2 {
@@ -154,6 +155,17 @@ header {
     z-index: 9999;
 }
 
+.button-container-home {
+  position: fixed;
+  top: 90px;
+  right: 60px;
+  z-index: 9999;
+}
+
+  .bottom-button-container {
+    display: none;
+  }
+
 
   /* FOOTER */
 
@@ -279,6 +291,8 @@ header {
 /* PROJECTS PAGE */
 .coming-soon {
   text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 
@@ -385,8 +399,9 @@ header {
   color: #2b2d42;
 }
 
+/* MOBILE RESPONSIVENESS */
 
-@media(max-width: 800px) {
+@media(max-width: 845px) {
   .hideOnMobile {
     display: none;
   }
@@ -410,13 +425,10 @@ header {
   nav {
   top: 0px;
   position: sticky;
-  margin: 0;
-  padding: 10px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 40px;
-  padding-left: 10%;
+  padding-left: 5%;
   padding-right: 5%;
   z-index: 11;
 }
@@ -532,4 +544,25 @@ header {
   display: inline-block;
   padding: 10px 10px;
 }
+
+.bottom-button-container {
+  position: fixed;
+  display: block;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 20px;
+  margin-right: 15px;
+}
+
+.button-container {
+  display: none;
+}
+
+.button-container-home {
+  position: fixed;
+  top: 110px;
+  right: 20px;
+  z-index: 1;
+}
+
 }
