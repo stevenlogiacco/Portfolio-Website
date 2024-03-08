@@ -328,8 +328,8 @@ header {
 }   
 
 #email-image {
-  max-width: 100px;
-  max-height: 100px;
+  max-width: 75px;
+  max-height: 75px;
   margin: 5px;
 }
 
@@ -356,8 +356,8 @@ header {
 }
 
 #linked-image {
-  max-width: 100px;
-  max-height: 100px;
+  max-width: 75px;
+  max-height: 75px;
   margin: 5px;
 }
 
@@ -543,21 +543,10 @@ header {
   grid-column: 1 / 2;
 }   
 
-#email-image {
-  max-width: 75px;
-  max-height: 75px;
-  margin: 5px;
-}
-
 .linkedin {
   grid-row: 2 / 3;
   grid-column: 1 / 2
 }
 
-#linked-image {
-  max-width: 75px;
-  max-height: 75px;
-  margin: 5px;
-}
 
 }
