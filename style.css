@@ -312,7 +312,7 @@ header {
     grid-template-columns: 300px 300px;
     grid-template-rows: 200px;
     gap: 10px;
-    
+
 }
 
 .email {
@@ -530,8 +530,9 @@ header {
 
 .contact-container {
   display: grid;
-  margin: 50px auto;
-  max-width: 70%;
+  margin: 75px auto;
+  width: 250px;
+  height: 250px;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 10px;
@@ -542,11 +543,21 @@ header {
   grid-column: 1 / 2;
 }   
 
+#email-image {
+  max-width: 75px;
+  max-height: 75px;
+  margin: 5px;
+}
+
 .linkedin {
   grid-row: 2 / 3;
   grid-column: 1 / 2
 }
 
-
+#linked-image {
+  max-width: 75px;
+  max-height: 75px;
+  margin: 5px;
+}
 
 }
