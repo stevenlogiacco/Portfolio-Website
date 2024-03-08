@@ -312,6 +312,7 @@ header {
     grid-template-columns: 300px 300px;
     grid-template-rows: 200px;
     gap: 10px;
+    
 }
 
 .email {
