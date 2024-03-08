@@ -24,9 +24,12 @@
   }
 
   .page-headings {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #2b2d42;
     font-size: 1.5rem;
+    width: 100%;
   }
 
   .page-headings h1 {
@@ -170,17 +173,20 @@ header {
   /* FOOTER */
 
   footer {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 30px;
     background-color: #fafaff;
     color: #2b2d42;
-    position: relative;
     bottom: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    right: 0;
+    width: 100%;    
   }
+
+
+
 
 
 
@@ -296,14 +302,15 @@ header {
 }
 
 
-
   /* CONTACT PAGE */
 
   .contact-container {
     display: grid;
+    place-content: center;
     margin: 50px auto;
-    max-width: 600px;
-    grid-template: repeat(2, 300px) / repeat(2, 300px);
+    width: 100%;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 200px;
     gap: 10px;
 }
 
@@ -312,7 +319,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 50px 0;
+    padding: 15px 0;
     border-radius: 15px;
     background-color: #fafaff;
     grid-row: 1 / 2;
@@ -335,7 +342,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 50px 0;
+    padding: 15px 0;
     border-radius: 15px;
     background-color: #fafaff;
     grid-row: 1 / 2;
@@ -353,51 +360,7 @@ header {
   margin: 5px;
 }
 
-.phone {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 15px;
-    background-color: #fafaff;
-    grid-row: 2 / 3;
-    grid-column: 1 / 2;
-    padding: 10px 20px;
-}   
 
-#phone-image {
-  max-width: 100px;
-  max-height: 100px;
-  margin: 5px;
-}
-
-.phone a, p {
-  text-decoration: none;
-  color: #2b2d42;
-}
-
-.cv {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 15px;
-    background-color: #fafaff;
-    grid-row: 2 / 3;
-    grid-column: 2 / 3;
-    padding: 10px 20px;
-}  
-
-#drive-image {
-  max-width: 100px;
-  max-height: 100px;
-  margin: 5px;
-}
-
-.cv a, p {
-  text-decoration: none;
-  color: #2b2d42;
-}
 
 /* MOBILE RESPONSIVENESS */
 
@@ -569,7 +532,7 @@ header {
   margin: 50px auto;
   max-width: 70%;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 10px;
 }
 
@@ -584,14 +547,5 @@ header {
 }
 
 
-.phone {
-  grid-row: 3 / 4;
-  grid-column: 1 / 2;
-}   
-
-.cv {
-  grid-row: 4 / 5;
-  grid-column: 1 / 2;
-}  
 
 }
