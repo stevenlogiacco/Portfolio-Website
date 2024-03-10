@@ -1,10 +1,10 @@
 // Skills game on homepage
 // Initialize skills and revealedSkills arrays
 let skills = [
-    'SOFT SKILLS:', 'collaboration', 'teamwork', 'communication', 'time management', 
-    'solid leadership', 'organisation', 'problem solving', 'critical thinking',
-    'HARD SKILLS:', 'certified project management professional (PMP)', 'including agile PM', 
-    'microsoft suite', 'SAP', 'HTML/CSS/JS'];
+    'Collaboration', 'Teamwork', 'Communication', 'Time Management', 
+    'Solid Leadership', 'Organisation', 'Problem Solving', 'Critical Thinking', 'Attention to Detail',
+    'Project Management Professional (PMP)', 'Agile PM', 
+    'Microsoft Suite', 'SAP', 'HTML/CSS/JS'];
 let revealedSkills = [];
 
 // Get the button element
@@ -23,8 +23,11 @@ function addSkill() {
     // Get the next skill from the skills array
     const nextSkill = skills[revealedSkills.length];
 
-    // Add the skill to revealedSkills
-    revealedSkills.push(nextSkill);
+    // Add the skill to END of revealedSkills
+    // revealedSkills.push(nextSkill);
+
+    // Add the skill to the START of revealedSkills
+    revealedSkills.unshift(nextSkill); // Use .unshift() here
 
     // Update the DOM to display the revealedSkills
     updateSkillsDisplay();
