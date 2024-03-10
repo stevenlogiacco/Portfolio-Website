@@ -60,6 +60,10 @@ header {
     padding-right: 5%;
   }
 
+  a {
+    text-decoration: none;
+  }
+
   .logo {
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
