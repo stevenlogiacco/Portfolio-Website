@@ -317,7 +317,7 @@ nav {
   .projects-grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: fit-content() fit-content() fit-content() fit-content() fit-content(); /* <<< Add additional values here */
+    grid-template-rows: fit-content() fit-content() fit-content() fit-content(); /* <<< Add additional values here */
     margin: 10px 10%;
     padding: 30px 20px;
     gap: 10px;
@@ -527,52 +527,6 @@ nav {
   }
 
   #NZPostOpen h2 {
-    display: inline-block;
-    font-size: 1.2rem;
-  }
-
-
-
-  /* Dataminer */
-
-  #DataminerClosed {
-    grid-column: 1 / 2;
-    grid-row: 5 / 6 ;
-    padding: 10px 30px;
-    background-color: #fafaff;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-  }
-
-  #DataminerClosed:hover {
-    color: #3c78d8;
-    cursor: pointer; 
-  }
-
-
-  #DataminerOpen {
-    grid-column: 1 / 2;
-    grid-row: 5 / 6 ;
-    padding: 0 30px;
-    background-color: #fafaff;
-    border-radius: 15px;
-    display: none;
-    align-items: center;
-    padding: 10px 30px;
-  }
-
-
-  #DataminerOpen:hover {
-    cursor: pointer; 
-  }
-
-   #DataminerClosed h2 {
-    display: inline-block;
-    font-size: 1.2rem;
-  }
-
-  #DataminerOpen h2 {
     display: inline-block;
     font-size: 1.2rem;
   }
