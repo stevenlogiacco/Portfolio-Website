@@ -649,4 +649,19 @@ and (orientation : landscape) {
     z-index: 9999;
 }
 
+.herocontainer {
+    display: grid;
+    position: relative;
+    margin-left: 50px;
+    margin-right: 100px;
+    margin-top: 50px;
+    gap: 0.50em;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr auto;
+}
+
+.experience {
+    margin-left: 50px;
+}
+
 }
