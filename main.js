@@ -72,7 +72,7 @@ function hideSidebar() {
 function showNZGT () {
     const NZGTOpen = document.querySelector("#NZGTOpen");
     const NZGTClosed = document.querySelector("#NZGTClosed");
-    NZGTOpen.style.display = 'block';
+    NZGTOpen.style.display = 'grid';
     NZGTClosed.style.display = 'none';   
 }
 
@@ -81,4 +81,18 @@ function hideNZGT () {
     const NZGTClosed = document.querySelector("#NZGTClosed");
     NZGTOpen.style.display = 'none';
     NZGTClosed.style.display = 'flex';  
+}
+
+function showQuantum () {
+    const QuantumOpen = document.querySelector("#QuantumOpen");
+    const QuantumClosed = document.querySelector("#QuantumClosed");
+    QuantumOpen.style.display = 'grid';
+    QuantumClosed.style.display = 'none'; 
+}
+
+function hideQuantum () {
+    const QuantumOpen = document.querySelector("#QuantumOpen");
+    const QuantumClosed = document.querySelector("#QuantumClosed");
+    QuantumOpen.style.display = 'none';
+    QuantumClosed.style.display = 'flex';  
 }

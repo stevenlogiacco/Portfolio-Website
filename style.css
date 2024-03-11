@@ -301,11 +301,12 @@ nav {
 /* PROJECTS PAGE */
 
   .projects-grid {
+    display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 2fr;
     margin: 10px 10%;
     padding: 30px 20px;
-    gap: 0.25em;
+    gap: 10px;
   }
 
   /* STYLING FOR EACH PROJECT */
@@ -326,6 +327,8 @@ nav {
   /* NZGT */
 
   #NZGTClosed {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2 ;
     padding: 10px 30px;
     background-color: #fafaff;
     border-radius: 15px;
@@ -363,6 +366,47 @@ nav {
   }
 
   #NZGTOpen h2 {
+    display: inline-block;
+  }
+
+
+  #QuantumClosed {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    padding: 10px 30px;
+    background-color: #fafaff;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+  }
+
+  #QuantumClosed:hover {
+    color: #3c78d8;
+    cursor: pointer; 
+  }
+
+
+  #QuantumOpen {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3 ;
+    padding: 0 30px;
+    background-color: #fafaff;
+    border-radius: 15px;
+    display: none;
+    align-items: center;
+    padding: 10px 30px;
+  }
+
+  #QuantumOpen:hover {
+    cursor: pointer; 
+  }
+
+
+   #QuantumClosed h2 {
+    display: inline-block;
+  }
+
+  #QuantumOpen h2 {
     display: inline-block;
   }
 
@@ -599,17 +643,14 @@ nav {
   }
 
   .projects-grid {
-      margin-top: 10px;
-      margin-bottom: 100px;
+      margin: 10px 10px 100px 10px;
       padding: 10px 0;
-      width: 95%;
-      margin: auto;
-  }
+      }
 
-  #NZGT {
+  /* #NZGT {
       font-size: 14px;
       padding-top: 0px;
-  }
+  } */
 
 .contact-container {
     display: grid;
@@ -641,7 +682,7 @@ nav {
 and (min-device-width : 768px) 
 and (max-device-width : 1336px)  {
 
-  .button-container {
+.button-container {
     position: fixed;
     top: 90px;
     right: 40px;
