@@ -96,3 +96,17 @@ function hideQuantum () {
     QuantumOpen.style.display = 'none';
     QuantumClosed.style.display = 'flex';  
 }
+
+function showTrace () {
+    const TraceOpen = document.querySelector("#TraceOpen");
+    const TraceClosed = document.querySelector("#TraceClosed");
+    TraceOpen.style.display = 'grid';
+    TraceClosed.style.display = 'none'; 
+}
+
+function hideTrace () {
+    const TraceOpen = document.querySelector("#TraceOpen");
+    const TraceClosed = document.querySelector("#TraceClosed");
+    TraceOpen.style.display = 'none';
+    TraceClosed.style.display = 'flex';  
+}

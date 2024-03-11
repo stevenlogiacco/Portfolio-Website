@@ -316,7 +316,7 @@ nav {
   .projects-grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 2fr;
+    grid-template-rows: fit-content() fit-content() fit-content(); /* <<< Add additional values here */
     margin: 10px 10%;
     padding: 30px 20px;
     gap: 10px;
@@ -325,6 +325,7 @@ nav {
   .projects-grid h2 {
     font-weight: 500;
   }
+
 
   /* STYLING FOR EACH PROJECT */
 
@@ -386,10 +387,12 @@ nav {
     display: inline-block;
   }
 
+  
+  /* QUANTUM */
 
   #QuantumClosed {
-    grid-row: 2 / 3;
     grid-column: 1 / 2;
+    grid-row: 2 / 3;
     padding: 10px 30px;
     background-color: #fafaff;
     border-radius: 15px;
@@ -427,6 +430,47 @@ nav {
     display: inline-block;
   }
 
+
+  /* TRACE 2 */
+
+  #TraceClosed {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4 ;
+    padding: 10px 30px;
+    background-color: #fafaff;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+  }
+
+  #TraceClosed:hover {
+    color: #3c78d8;
+    cursor: pointer; 
+  }
+
+
+  #TraceOpen {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4 ;
+    padding: 0 30px;
+    background-color: #fafaff;
+    border-radius: 15px;
+    display: none;
+    align-items: center;
+    padding: 10px 30px;
+  }
+
+  #TraceOpen:hover {
+    cursor: pointer; 
+  }
+
+   #TraceClosed h2 {
+    display: inline-block;
+  }
+
+  #TraceOpen h2 {
+    display: inline-block;
+  }
 
 
 
