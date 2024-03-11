@@ -110,3 +110,17 @@ function hideTrace () {
     TraceOpen.style.display = 'none';
     TraceClosed.style.display = 'flex';  
 }
+
+function showNZPost () {
+    const NZPostOpen = document.querySelector("#NZPostOpen");
+    const NZPostClosed = document.querySelector("#NZPostClosed");
+    NZPostOpen.style.display = 'grid';
+    NZPostClosed.style.display = 'none'; 
+}
+
+function hideNZPost () {
+    const NZPostOpen = document.querySelector("#NZPostOpen");
+    const NZPostClosed = document.querySelector("#NZPostClosed");
+    NZPostOpen.style.display = 'none';
+    NZPostClosed.style.display = 'flex';  
+}

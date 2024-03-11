@@ -46,6 +46,7 @@
     grid-row: 2 / 3;
     grid-column: 1 / 2;
     font-weight: 400;
+    font-size: 1rem;
     text-align: center;
   }
 
@@ -316,7 +317,7 @@ nav {
   .projects-grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: fit-content() fit-content() fit-content(); /* <<< Add additional values here */
+    grid-template-rows: fit-content() fit-content() fit-content() fit-content(); /* <<< Add additional values here */
     margin: 10px 10%;
     padding: 30px 20px;
     gap: 10px;
@@ -330,6 +331,7 @@ nav {
   /* STYLING FOR EACH PROJECT */
 
   .material-symbols-outlined {
+    margin-right: 10px;
     font-variation-settings:
     'FILL' 0,
     'wght' 700,
@@ -341,6 +343,10 @@ nav {
     display: flex;
     align-items: center;
   }
+
+  .material-symbols-outlined:hover {
+    color: #3c78d8;
+}
 
   /* NZGT */
 
@@ -375,19 +381,19 @@ nav {
     cursor: pointer; 
   }
 
-  .material-symbols-outlined:hover {
-      color: #3c78d8;
-  }
+
 
    #NZGTClosed h2 {
     display: inline-block;
+    font-size: 1.2rem;
   }
 
   #NZGTOpen h2 {
     display: inline-block;
+    font-size: 1.2rem;
   }
 
-  
+
   /* QUANTUM */
 
   #QuantumClosed {
@@ -424,10 +430,12 @@ nav {
 
    #QuantumClosed h2 {
     display: inline-block;
+    font-size: 1.2rem;
   }
 
   #QuantumOpen h2 {
     display: inline-block;
+    font-size: 1.2rem;
   }
 
 
@@ -466,10 +474,56 @@ nav {
 
    #TraceClosed h2 {
     display: inline-block;
+    font-size: 1.2rem;
   }
 
   #TraceOpen h2 {
     display: inline-block;
+    font-size: 1.2rem;
+  }
+
+
+  /* NZ Post WiFi */
+
+  #NZPostClosed {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5 ;
+    padding: 10px 30px;
+    background-color: #fafaff;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+  }
+
+  #NZPostClosed:hover {
+    color: #3c78d8;
+    cursor: pointer; 
+  }
+
+
+  #NZPostOpen {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5 ;
+    padding: 0 30px;
+    background-color: #fafaff;
+    border-radius: 15px;
+    display: none;
+    align-items: center;
+    padding: 10px 30px;
+  }
+
+  #NZPostOpen:hover {
+    cursor: pointer; 
+  }
+
+   #NZPostClosed h2 {
+    display: inline-block;
+    font-size: 1.2rem;
+  }
+
+  #NZPostOpen h2 {
+    display: inline-block;
+    font-size: 1.2rem;
   }
 
 
