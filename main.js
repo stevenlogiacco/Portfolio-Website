@@ -124,3 +124,17 @@ function hideNZPost () {
     NZPostOpen.style.display = 'none';
     NZPostClosed.style.display = 'flex';  
 }
+
+function showDataminer () {
+    const DataminerOpen = document.querySelector("#DataminerOpen");
+    const DataminerClosed = document.querySelector("#DataminerClosed");
+    DataminerOpen.style.display = 'grid';
+    DataminerClosed.style.display = 'none'; 
+}
+
+function hideDataminer () {
+    const DataminerOpen = document.querySelector("#DataminerOpen");
+    const DataminerClosed = document.querySelector("#DataminerClosed");
+    DataminerOpen.style.display = 'none';
+    DataminerClosed.style.display = 'flex';  
+}
