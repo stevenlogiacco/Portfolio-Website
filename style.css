@@ -348,6 +348,10 @@ nav {
     color: #3c78d8;
 }
 
+  .indent {
+    margin-left: 20px;
+  }
+
   /* NZGT */
 
   #NZGTClosed {
@@ -511,6 +515,7 @@ nav {
     align-items: center;
     padding: 10px 30px;
   }
+
 
   #NZPostOpen:hover {
     cursor: pointer; 
