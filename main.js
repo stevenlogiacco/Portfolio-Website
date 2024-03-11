@@ -53,25 +53,6 @@ function updateSkillsDisplay() {
 updateSkillsDisplay();
 
 
-// function addSkill() {
-//     // Check if all skills have been revealed
-//     if (revealedSkills.length === skills.length) {
-//         // Reset revealedSkills array
-//         revealedSkills = [];
-
-//         // Clear the skills display in the DOM
-//         updateSkillsDisplay();
-//     } else {
-//         // Get the next skill from the skills array
-//         const nextSkill = skills[revealedSkills.length];
-
-//         // Add the skill to revealedSkills
-//         revealedSkills.push(nextSkill);
-
-//         // Update the DOM to display the revealedSkills
-//         updateSkillsDisplay();
-//     }
-// }
 
 // SIDEBAR OPEN AND CLOSE
 
@@ -84,4 +65,20 @@ function showSidebar() {
 function hideSidebar() {
     const sidebar = document.querySelector('.sidebar');
     sidebar.style.display = 'none';
+}
+
+// PROJECTS PAGE EXPAND AND COLLAPSE
+
+function showNZGT () {
+    const NZGTOpen = document.querySelector("#NZGTOpen");
+    const NZGTClosed = document.querySelector("#NZGTClosed");
+    NZGTOpen.style.display = 'block';
+    NZGTClosed.style.display = 'none';   
+}
+
+function hideNZGT () {
+    const NZGTOpen = document.querySelector("#NZGTOpen");
+    const NZGTClosed = document.querySelector("#NZGTClosed");
+    NZGTOpen.style.display = 'none';
+    NZGTClosed.style.display = 'flex';  
 }
